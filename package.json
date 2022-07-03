@@ -24,11 +24,12 @@
   },
   "homepage": "https://github.com/github.com/flingyp#readme",
   "devDependencies": {
-    "typescript": "^4.6.4",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "commitizen": "^4.2.4",
-    "vitepress": "^0.22.4"
+    "typescript": "^4.6.4",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
   },
   "config": {
     "commitizen": {

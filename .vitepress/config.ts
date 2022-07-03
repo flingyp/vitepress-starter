@@ -1,79 +1,74 @@
-/**
- * VitePress的配置文件
- */
-
 import { defineConfig } from "vitepress";
 
-const VitePressConfig = defineConfig({
-  base: "/vitepress-basic-docs/",
+export default defineConfig({
+  base: "/vitepress-basic-docs",
   title: "Basic Docs",
-  description: "基于 Vitepress 搭建的项目文档框架",
-  head: [
-    ["meta", { name: "author", content: "FlingYP" }],
-    [
-      "meta",
-      {
-        name: "keywords",
-        content: "VitePress, Vue3, VuePress, Docs, Static Site",
-      },
-    ],
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/docs-logo.png" }],
-    [
-      "meta",
-      {
-        name: "viewport",
-        content:
-          "width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
-      },
-    ],
-    ["link", { rel: "icon", href: "/favicon.ico" }],
-  ],
+  description: "VitePress 静态网站基本模板",
   themeConfig: {
-    logo: "/docs-logo.png", // 定义顶部最左侧Logo
-    docsRepo: "flingyp/vitepress-basic-docs", // 定义顶部最右侧GitHub仓库网址
-    repoLabel: "GitHub",
-    // 顶部导航栏
+    // 文档标题
+    siteTitle: "Basic Docs",
+    // 文档LOGO
+    logo: "/docs-logo.png",
+    // 顶部栏导航栏
     nav: [
+      { text: "Guide", link: "/guide/" },
+      { text: "Configs", link: "/configs/" },
       {
-        text: "指南",
-        link: "/guide/",
+        text: "Github源码",
+        link: "https://github.com/flingyp/vitepress-basic-docs",
       },
       {
         text: "相关链接",
         items: [
           {
-            text: "文档源码",
+            text: "源码地址",
             link: "https://github.com/flingyp/vitepress-basic-docs",
           },
-          {
-            text: "预览地址",
-            link: "http://yyblog.top/vitepress-basic-docs",
-          },
+          { text: "预览地址", link: "https://yyblog.top/vitepress-basic-docs" },
         ],
       },
     ],
-    // 侧边栏
+    // 顶部右侧相关社交账号栏
+    socialLinks: [
+      { icon: "github", link: "https://github.com/flingyp" },
+      { icon: "twitter", link: "..." },
+      { icon: "discord", link: "..." },
+      { icon: "facebook", link: "https://github.com/flingyp" },
+      { icon: "instagram", link: "..." },
+      { icon: "linkedin", link: "..." },
+      { icon: "youtube", link: "..." },
+    ],
+    // 左侧侧边栏
     sidebar: {
       "/guide/": [
         {
-          text: "项目指南",
-          children: [
-            {
-              text: "介绍",
-              link: "/guide/index",
-            },
-            {
-              text: "快速上手",
-              link: "/guide/start",
-            },
+          text: "Guide",
+          items: [
+            { text: "Introduction", link: "/guide/" },
+            { text: "Getting Started", link: "/getting-started" },
+          ],
+        },
+      ],
+      "/configs": [
+        {
+          text: "Section Title A",
+          collapsible: true, // 是否开启折叠
+          collapsed: false, // 默认折叠
+          items: [
+            { text: "Item A", link: "/item-a" },
+            { text: "Item B", link: "/item-b" },
           ],
         },
       ],
     },
-  },
-  markdown: {
-    toc: { includeLevel: [1, 2] },
+    editLink: {
+      pattern:
+        "https://github.com/flingyp/vitepress-basic-docs/tree/main/:path",
+      text: "Edit this page on GitHub",
+    },
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2022-present FlingYP",
+    },
   },
 });
-
-export default VitePressConfig;

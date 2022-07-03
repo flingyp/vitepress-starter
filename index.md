@@ -1,23 +1,31 @@
 ---
-home: true
-heroImage: /docs-logo.png
-heroAlt: Docs Logo
-heroText: Basic Docs
-tagline: 一个基于 Vitepress 搭建的项目文档框架
+layout: home
 
-actionText: 快速开始 →
-actionLink: /guide/
+title: VitePress
+titleTemplate: Vite & Vue Powered Static Site Generator
 
-altActionText: 在线预览
-altActionLink: http://yyblog.top/vitepress-basic-docs
+hero:
+  name: BasicDocs
+  text: Vite & Vue Powered Static Site Generator
+  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  image:
+    src: /docs-logo.png
+    alt: Vitest
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
 
 features:
-  - title: 😉 Vue3
-    details: 一款用于构建 Web 界面，易学易用，性能出色且功能丰富的框架。
-  - title: 😁 VitePress
-    details: VitePress 是 VuePress 小兄弟, 基于 Vite构建。Vue 驱动的静态站点生成器。
-  - title: 😛 TypeScript
-    details: TypeScript 是 JavaScript 的一个超集。
-
-footer: MIT Licensed | Copyright © 2021-present FlingYP
+  - title: "Vite: The DX that can't be beat"
+    details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
+  - title: Designed to be simplicity first
+    details: With Markdown-centered content, it's built to help you focus on writing and deployed with minimum configuration.
+  - title: Power of Vue meets Markdown
+    details: Enhance your content with all the features of Vue in Markdown, while being able to customize your site with Vue.
+  - title: Fully static yet still dynamic
+    details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
 ---
