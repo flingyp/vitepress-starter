@@ -4,6 +4,12 @@ export default defineConfig({
   base: "/vitepress-basic-docs",
   title: "Basic Docs",
   description: "VitePress 静态网站基本模板",
+  markdown: {
+    theme: {
+      light: "vitesse-light",
+      dark: "vitesse-dark",
+    },
+  },
   themeConfig: {
     // 文档标题
     siteTitle: "Basic Docs",

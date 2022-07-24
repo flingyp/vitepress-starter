@@ -14,3 +14,8 @@ Vitepress Basic Docs 是一个基于 Vitepress 搭建的项目基础文档，以
 
 - `.vitepress/config.js` VitePress 配置文件
 - `public` 存放公共资源文件
+
+```ts
+import { ttt } from "xxx";
+console.log(ttt());
+```
