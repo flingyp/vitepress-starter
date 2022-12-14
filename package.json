@@ -1,7 +1,7 @@
 {
   "name": "vitepress-basic-docs",
   "version": "1.0.0",
-  "description": "vitepress项目基础文档",
+  "description": "Starter template for Vitepress Docs",
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flingyp/vitepress-basic-docs"
+    "url": "git+https://github.com/flingyp/vitepress-starter"
   },
   "keywords": [
     "Vitepress",
@@ -20,16 +20,16 @@
   "author": "FlingYP",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/github.com/flingyp/issues"
+    "url": "https://github.com/flingyp/vitepress-starter/issues"
   },
-  "homepage": "https://github.com/github.com/flingyp#readme",
+  "homepage": "https://github.com/flingyp/vitepress-starter/#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0",
-    "commitizen": "^4.2.4",
-    "typescript": "^4.6.4",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitizen": "^4.2.6",
+    "typescript": "^4.9.4",
+    "vitepress": "1.0.0-alpha.31",
+    "vue": "^3.2.45"
   },
   "config": {
     "commitizen": {
