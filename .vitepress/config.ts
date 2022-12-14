@@ -1,9 +1,9 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  base: "/vitepress-basic-docs",
-  title: "Basic Docs",
-  description: "VitePress 静态网站基本模板",
+  base: "/vitepress-starter",
+  title: "Vitepress Starter",
+  description: "Vitepress Starter",
   markdown: {
     theme: {
       light: "vitesse-light",
@@ -21,16 +21,16 @@ export default defineConfig({
       { text: "Configs", link: "/configs/" },
       {
         text: "Github源码",
-        link: "https://github.com/flingyp/vitepress-basic-docs",
+        link: "https://github.com/flingyp/vitepress-starter",
       },
       {
         text: "相关链接",
         items: [
           {
             text: "源码地址",
-            link: "https://github.com/flingyp/vitepress-basic-docs",
+            link: "https://github.com/flingyp/vitepress-starter",
           },
-          { text: "预览地址", link: "https://yyblog.top/vitepress-basic-docs" },
+          { text: "预览地址", link: "https://yyblog.top/vitepress-starter" },
         ],
       },
     ],
@@ -68,8 +68,7 @@ export default defineConfig({
       ],
     },
     editLink: {
-      pattern:
-        "https://github.com/flingyp/vitepress-basic-docs/tree/main/:path",
+      pattern: "https://github.com/flingyp/vitepress-starter/tree/main/:path",
       text: "Edit this page on GitHub",
     },
     footer: {
