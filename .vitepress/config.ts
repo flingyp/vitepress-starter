@@ -12,17 +12,12 @@ export default defineConfig({
   },
   themeConfig: {
     // 文档标题
-    siteTitle: "Basic Docs",
+    siteTitle: "Vitepress Starter",
     // 文档LOGO
     logo: "/docs-logo.png",
     // 顶部栏导航栏
     nav: [
-      { text: "Guide", link: "/guide/" },
-      { text: "Configs", link: "/configs/" },
-      {
-        text: "Github源码",
-        link: "https://github.com/flingyp/vitepress-starter",
-      },
+      { text: "Starter", link: "/starter/" },
       {
         text: "相关链接",
         items: [
@@ -46,24 +41,10 @@ export default defineConfig({
     ],
     // 左侧侧边栏
     sidebar: {
-      "/guide/": [
+      "/starter/": [
         {
-          text: "Guide",
-          items: [
-            { text: "Introduction", link: "/guide/" },
-            { text: "Getting Started", link: "/getting-started" },
-          ],
-        },
-      ],
-      "/configs": [
-        {
-          text: "Section Title A",
-          collapsible: true, // 是否开启折叠
-          collapsed: false, // 默认折叠
-          items: [
-            { text: "Item A", link: "/item-a" },
-            { text: "Item B", link: "/item-b" },
-          ],
+          text: "Starter",
+          items: [{ text: "Introduction", link: "/" }],
         },
       ],
     },
