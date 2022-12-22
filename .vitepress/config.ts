@@ -1,4 +1,8 @@
 import { defineConfig } from "vitepress";
+import {
+  containerPreview,
+  componentPreview,
+} from "@vitepress-demo-preview/plugin";
 
 export default defineConfig({
   base: "/vitepress-starter",
@@ -8,6 +12,10 @@ export default defineConfig({
     theme: {
       light: "vitesse-light",
       dark: "vitesse-dark",
+    },
+    config(md) {
+      md.use(containerPreview);
+      md.use(componentPreview);
     },
   },
   themeConfig: {
@@ -44,7 +52,7 @@ export default defineConfig({
       "/starter/": [
         {
           text: "Starter",
-          items: [{ text: "Introduction", link: "/" }],
+          items: [{ text: "Introduction", link: "/starter/" }],
         },
       ],
     },
